@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: tasks-generator-api
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/specs/history
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
