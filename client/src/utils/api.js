@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5001/api/specs"
+const BASE_URL = "https://tasks-generator-api.onrender.com/api/specs"
 
 export const generateSpec = async (data) => {
   const res = await fetch(`${BASE_URL}/generate`, {
