@@ -54,7 +54,7 @@ function App() {
   }
 
   const getHistory = async () => {
-    const res = await fetch("http://localhost:5001/api/specs/history")
+    const res = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:5001/api/specs"}/history`)
     return res.json()
   }
 
