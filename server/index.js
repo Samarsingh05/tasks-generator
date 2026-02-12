@@ -7,7 +7,7 @@ const specsRoute = require('./routes/specs')
 const app = express()
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: ["http://localhost:5173", "https://samarsingh05.github.io"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type"]
 }))
